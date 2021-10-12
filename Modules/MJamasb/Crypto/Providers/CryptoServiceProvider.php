@@ -1,11 +1,11 @@
 <?php
 
-namespace MJamasb\User\Providers;
+namespace MJamasb\Crypto\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use MJamasb\User\Models\User;
 
-class UserServiceProvider extends ServiceProvider
+class CryptoServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
@@ -25,7 +25,7 @@ class UserServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        $this->loadRoutesFrom(__DIR__ . '/../Routes/user_routes.php');
+        $this->loadRoutesFrom(__DIR__ . '/../Routes/crypto_routes.php');
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
         $this->loadFactoriesFrom(__DIR__ . '/../Database/Factories');
         $this->loadViewsFrom(__DIR__ . '/../Resources/views','User');

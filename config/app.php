@@ -165,7 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
-        \MJamasb\User\Providers\UserServiceProvider::class,
+        \MJamasb\User\Providers\CoinServiceProvider::class,
 
         /*
          * Application Service Providers...

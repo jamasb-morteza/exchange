@@ -1,19 +1,20 @@
 <?php
 
-namespace MJamasb\Currency\Database\Factories;
+namespace MJamasb\Crypto\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
+use MJamasb\Crypto\Models\Crypto;
 use MJamasb\User\Models\User;
 
-class CurrencyFactory extends Factory
+class CryptoFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = User::class;
+    protected $model = Crypto::class;
 
     /**
      * Define the model's default state.
