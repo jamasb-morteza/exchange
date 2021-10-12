@@ -62,7 +62,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => \MJamasb\Auth\Models\User::class,
+            'model' => \MJamasb\User\Models\User::class,
         ],
 
         // 'users' => [

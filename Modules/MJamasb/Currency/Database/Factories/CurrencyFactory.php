@@ -2,11 +2,11 @@
 
 namespace Database\Factories;
 
-use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
+use MJamasb\User\Models\User;
 
-class UserFactory extends Factory
+class CurrencyFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.

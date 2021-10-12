@@ -1,6 +1,6 @@
 <?php
 
-namespace MJamasb\Auth\Models;
+namespace MJamasb\User\Models;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

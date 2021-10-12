@@ -3,7 +3,7 @@
 namespace MJamasb\Auth\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use MJamasb\Auth\Models\User;
+use MJamasb\User\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;

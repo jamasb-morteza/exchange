@@ -165,7 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
-        \MJamasb\Auth\Providers\AuthAppServiceProvider::class,
+        \MJamasb\User\Providers\UserServiceProvider::class,
 
         /*
          * Application Service Providers...

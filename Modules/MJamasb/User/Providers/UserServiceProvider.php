@@ -1,11 +1,11 @@
 <?php
 
-namespace MJamasb\Auth\Providers;
+namespace MJamasb\User\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use MJamasb\User\Models\User;
 
-class AuthAppServiceProvider extends ServiceProvider
+class UserServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
@@ -15,7 +15,6 @@ class AuthAppServiceProvider extends ServiceProvider
     public function register()
     {
         //
-        config()->set('auth.providers.users.model', User::class);
     }
 
     /**
@@ -26,9 +25,9 @@ class AuthAppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        $this->loadRoutesFrom(__DIR__ . '/../Routes/auth_routes.php');
+        $this->loadRoutesFrom(__DIR__ . '/../Routes/user_routes.php');
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
         $this->loadFactoriesFrom(__DIR__ . '/../Database/Factories');
-        $this->loadViewsFrom(__DIR__ . '/../Resources/views','Auth');
+        $this->loadViewsFrom(__DIR__ . '/../Resources/views','User');
     }
 }
