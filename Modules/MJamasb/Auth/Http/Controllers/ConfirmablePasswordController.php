@@ -17,7 +17,7 @@ class ConfirmablePasswordController extends Controller
      */
     public function show()
     {
-        return view('Auth::confirm-password');
+        return view('auth::confirm-password');
     }
 
     /**

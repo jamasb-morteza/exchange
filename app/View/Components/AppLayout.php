@@ -11,6 +11,8 @@ class AppLayout extends Component
      *
      * @return \Illuminate\View\View
      */
+    public $current;
+
     public function render()
     {
         return view('layouts.app');

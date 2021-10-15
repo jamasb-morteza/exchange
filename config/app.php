@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool)env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -165,13 +165,14 @@ return [
         /*
          * Package Service Providers...
          */
-        \MJamasb\User\Providers\CoinServiceProvider::class,
+
+
 
         /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
-        \MJamasb\Auth\Providers\AuthServiceProvider::class,
+
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,

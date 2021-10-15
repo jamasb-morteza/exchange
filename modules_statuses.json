@@ -1,0 +1,8 @@
+{
+    "Auth": true,
+    "Core": true,
+    "User": true,
+    "Currency": true,
+    "Crypto": true,
+    "Coin": true
+}

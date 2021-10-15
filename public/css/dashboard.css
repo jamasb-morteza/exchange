@@ -18206,6 +18206,7 @@ html:not([dir=rtl]) .list-inline {
   position: relative;
 }
 .c-wrapper:not(.c-wrapper-fluid) .c-header-fixed {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -18219,6 +18220,7 @@ html:not([dir=rtl]) .list-inline {
   }
 }
 .c-wrapper:not(.c-wrapper-fluid) .c-footer-fixed {
+  position: -webkit-sticky;
   position: sticky;
   bottom: 0;
 }
@@ -20219,6 +20221,7 @@ html:not([dir=rtl]) .float-right {
 }
 
 .position-sticky {
+  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -20238,8 +20241,9 @@ html:not([dir=rtl]) .float-right {
   z-index: 1030;
 }
 
-@supports (position: sticky) {
+@supports ((position: -webkit-sticky) or (position: sticky)) {
   .sticky-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -24900,6 +24904,14 @@ h3 {
     border-color: #d8dbe0;
   }
 }
+*[dir=rtl] {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+*[dir=rtl] body {
+  text-align: right;
+}
+
 #app {
   width: 100%;
 }
@@ -24964,4 +24976,12 @@ h3 {
 .slideIn {
   -webkit-animation-name: slideIn;
   animation-name: slideIn;
+}
+
+.c-main {
+  padding-top: 0;
+}
+
+[x-cloak] {
+  display: none;
 }
