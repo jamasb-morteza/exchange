@@ -76,7 +76,7 @@ Route::prefix('auth')->group(function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('layouts.app_adminlte');
 })->middleware(['auth'])->name('dashboard');
 
 
