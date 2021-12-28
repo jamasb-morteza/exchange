@@ -4,18 +4,24 @@
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
-<!-- Preloader -->
-<x-adminlte.preload/>
+    <!-- Preloader -->
+    <x-adminlte.preload/>
 
-@include('partials.navbar')
+    @include('partials.navbar')
 
-@include('partials.sidebar-container')
+    @include('partials.sidebar-container')
+    <div class="content-wrapper">
+        {!! isset($header)?$header:'' !!}
+        <section class="content">
+            <div class="container-fluid">
+                {!! isset($content)?$content:'' !!}
 
-@include('partials.content-wrapper')
-<!-- /.content-wrapper -->
-@include('partials.footer')
+            </div>
+        </section>
+    </div>
+    @include('partials.footer')
 
-@include('partials.sidebar-controls')
+    @include('partials.sidebar-controls')
 </div>
 <!-- ./wrapper -->
 

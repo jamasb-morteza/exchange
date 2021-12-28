@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app_adminlte>
     <x-slot name="header">
         <h2 class="h4 font-weight-bold">
             {{ __('Dashboard') }}
@@ -7,7 +7,7 @@
 
     <div class="card my-4">
         <div class="card-body">
-            You're logged in!
+            You're logged in!ss
         </div>
     </div>
-</x-app-layout>
+</x-app_adminlte>

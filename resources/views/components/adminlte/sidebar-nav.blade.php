@@ -26,29 +26,29 @@
     <x-adminlte.sidebar-nav-group
         :selected="$attributes['selected-side-nav']==='dashboard'"
         title="ارزها"
-        iclass="fas fa-tachometer-alt"
+{{--        iclass="fas fa-tachometer-alt"--}}
     >
         <x-slot name="items">
             <x-adminlte.sidenav-item
-                iclass="fa fa-user"
+                iclass="fas fa-money-bill"
                 title="ارز"
                 href="{{route('currencies.index')}}"
                 :selected="$attributes['selected-side-nav']==='currency.currency.index'"
             />
             <x-adminlte.sidenav-item
-                iclass="fa fa-shield"
+                iclass="fas fa-coins"
                 title="سکه"
                 href="{{route('coins.index')}}"
                 :selected="$attributes['selected-side-nav']==='currency.gold.index'"
             />
             <x-adminlte.sidenav-item
-                iclass="fa fa-shield"
+                iclass="fab fa-bitcoin"
                 title="رمزارز"
                 href="{{route('users.create')}}"
                 :selected="$attributes['selected-side-nav']==='currency.crypto.index'"
             />
         </x-slot>
     </x-adminlte.sidebar-nav-group>
-    <x-adminlte.sidebar-nav-header title="Sample"/>
+{{--    <x-adminlte.sidebar-nav-header title="Sample"/>--}}
 
 </ul>
